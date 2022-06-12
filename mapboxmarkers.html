@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Map Marker</title>
+<script src="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js"></script>
+<link href="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css" rel="stylesheet" />
+<style>
+  body { margin: 0; padding: 0; }
+  #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+</style>
+</head>
+<body>
+  
+<div id="map"></div>
+ 
+<script>
+
+  mapboxgl.accessToken = 'pk.eyJ1IjoibnRkb3VibGV1Mjk3IiwiYSI6ImNrdG0wbHJ5NTIwem0ycW5tYzE3cDFvbmEifQ.ptrOaXc1XD6u98yWpWG7Qw';
+
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v10',
+        center: [-71.091542,42.358862],
+        zoom: 12
+    });
+
+    //and now what we are going to do is that we are going to set up, or we're going to add to this map a 'marker'...we are going ot do it using a function from the map box library 
+    
+    var marker = new mapboxgl.Marker()
+    .setLngLat([-71.091542,42.358862])
+    .addTo(map);
+
+
+</script>
+ 
+</body>
+</html>
