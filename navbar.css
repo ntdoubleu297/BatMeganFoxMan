@@ -1,0 +1,31 @@
+.background{
+    display: grid;
+    grid-template-columns: repeat(1, 7fr);
+    grid-template-rows: repeat(1, 200px);
+    background: black;
+}
+
+a{
+    padding: 5px;
+    text-align: center;
+    font-size: 32px;
+    color: dimgrey;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.body{
+    display: grid;
+    grid-template-columns: repeat(1, 7fr);
+    grid-template-rows: repeat(1, 1100px);
+    background: black;
+}
+
+.opening{
+    font-size: 23px;
+    color: dimgrey;
+}
+
+select{
+    background: dimgrey;
+}
+

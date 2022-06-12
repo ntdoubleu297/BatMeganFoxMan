@@ -1,0 +1,8 @@
+nav:hover {
+    font-size: 25px;
+    text-decoration-color: blue;
+  }
+  
+  
+  .shownext { display: none; }
+  li:hover + .shownext { display: block; }
